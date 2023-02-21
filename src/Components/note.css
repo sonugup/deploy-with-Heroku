@@ -1,0 +1,36 @@
+.note{
+    background-color: white;
+    border: 1px solid;
+    width: 400px;
+    margin:1% auto;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+}
+.formdiv{
+    display: grid;
+    padding: 20px;
+}
+
+.formdiv button{
+    margin-left: 150px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.formdiv input{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border: none;
+}
+.formdiv textarea{
+    border: none;
+    padding: 10px;
+}
+
+.formdiv input:hover{
+    border: none;
+}

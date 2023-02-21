@@ -1,0 +1,30 @@
+.notediv{
+    /* width: 400px; */
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-around;
+}
+.box{
+    width: 400px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0 0 1 rgba(0, 4px, 4px, .3); 
+}
+.btn{
+    width: 100%;
+    border: none;
+    text-align: end;
+    background:none;
+    
+    cursor: pointer;
+    justify-content: space-between;
+}
+.btn1{
+    display: flex;
+}
