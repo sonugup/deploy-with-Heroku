@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Sonu",
+      "email": "sonu@gaiml.com",
+      "address":"Mumbai",
+      "contact":"2143658709",
+      "image":"https://avatars.githubusercontent.com/u/101567095?v=4"
+    }
+  ]
+}
