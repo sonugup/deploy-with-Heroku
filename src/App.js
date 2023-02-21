@@ -18,6 +18,7 @@ const api = "http://localhost:8080/posts";
 function App() {
   const [user, setUser] = useState("");
 
+  
   const getdata= async () => {
     const res= await axios(api)
     const data= await res.json();
