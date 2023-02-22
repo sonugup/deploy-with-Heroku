@@ -17,11 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "sonu": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 8090"
+    "server": "json-server --watch db.json --port 8090",
+    "install": "node src/app.js"
   },
   "eslintConfig": {
     "extends": [
