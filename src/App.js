@@ -26,7 +26,7 @@ function App() {
   const [state, setState] = useState(initialState);
   const [data, setData] = useState([]);
   const [userId, setUserId] = useState(null);
-  const [edit, setEdit] =useState(false)
+  const [edit, setEdit] = useState(false);
 
   const { image, name, email, contact, address } = state;
 
@@ -40,30 +40,30 @@ function App() {
     getdata();
   }, []);
 
-  const heandleChange= (e) => {
-    const {name, value} = e.target;
-    setState({...state, [name]:value})
-  }
+  const heandleChange = (e) => {
+    const { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
 
-  const heandleUpdate =(id) => {
-    const sUser=data.find((item) => item.id == id);
-    setState({...sUser});
+  const heandleUpdate = (id) => {
+    const sUser = data.find((item) => item.id == id);
+    setState({ ...sUser });
     setUserId(id);
-    setEdit(true)
-  }
-  const heandleDelete =async(id) => {
-    if(window.confirm("Are you wanted to delete that user")){
+    setEdit(true);
+  };
+  const heandleDelete = async (id) => {
+    if (window.confirm("Are you wanted to delete that user")) {
       axios.delete(`${api}/${id}`);
-      toast.success("Delete your user Successfully")
-      setTimeout(() =>  getdata(), 500)
+      toast.success("Delete your user Successfully");
+      setTimeout(() => getdata(), 500);
     }
-  }
+  };
   const heandleSubmit = (e) => {
     e.preventDefault();
     if (!email || !name || !image || !contact || !address) {
       toast.error("Please fill the form");
     } else {
-      if(!edit){
+      if (!edit) {
         axios.post(api, state);
         toast.success("Added SuccessFully");
         setState({
@@ -73,22 +73,21 @@ function App() {
           contact: "",
           address: "",
         });
-        setTimeout(() =>  getdata(), 500)
-      }else{
+        setTimeout(() => getdata(), 500);
+      } else {
         axios.put(`${api}/${userId}`, state);
-      toast.success("Added SuccessFully");
-      setState({
-        image: "",
-        name: "",
-        email: "",
-        contact: "",
-        address: "",
-      });
-      setTimeout(() =>  getdata(), 500)
-      setUserId(null);
-      setEdit(false)
+        toast.success("Added SuccessFully");
+        setState({
+          image: "",
+          name: "",
+          email: "",
+          contact: "",
+          address: "",
+        });
+        setTimeout(() => getdata(), 500);
+        setUserId(null);
+        setEdit(false);
       }
-      
     }
   };
   return (
@@ -154,7 +153,7 @@ function App() {
 
               <div className="d-grid gap-2 mt-2">
                 <Button type="submit" variant="primary" size="lg">
-                {edit ? "Update" : "Submit"}
+                  {edit ? "Update" : "Submit"}
                 </Button>
               </div>
             </Form>
