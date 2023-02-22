@@ -183,7 +183,7 @@ function App() {
                             alt=""
                             width="50px"
                             height="50px"
-                          />{" "}
+                          />
                         </td>
                         <td> {item.name} </td>
                         <td> {item.email} </td>
