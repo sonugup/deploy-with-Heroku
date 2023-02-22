@@ -32,7 +32,6 @@ function App() {
 
   const getdata = async () => {
     const res = await axios.get(api);
-    // const data=await res
     setData(res.data);
     console.log(res.data);
   };
