@@ -2,11 +2,19 @@
   "posts": [
     {
       "id": 1,
-      "name": "Sonu",
+      "name": "Sonu Gupta",
       "email": "sonu@gaiml.com",
-      "address":"Mumbai",
-      "contact":"2143658709",
-      "image":"https://avatars.githubusercontent.com/u/101567095?v=4"
+      "address": "Mumbai",
+      "contact": "2143658709",
+      "image": "https://avatars.githubusercontent.com/u/101567095?v=4"
+    },
+    {
+      "image": "https://images.indianexpress.com/2019/06/kartikey-gupta_759.jpg?resize=600",
+      "name": "Kartikey Gupta",
+      "email": "kartikey@gmail.com",
+      "contact": "4984093487",
+      "address": "Mumbai ",
+      "id": 2
     }
   ]
 }
